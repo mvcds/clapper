@@ -7,7 +7,11 @@
   "author": "Marcos Vinícius C. da Silva <marvinc.silva@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint:js": "eslint src/**/*.js webpack.config.js",
+    "lint:ts": "tslint --project .",
+    "lint": "yarn lint:ts && yarn lint:js",
+    "validate": "yarn lint"
   },
   "dependencies": {
     "@types/react": "^16.0.22",
@@ -17,8 +21,17 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.3.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-typescript": "^0.8.0",
     "source-map-loader": "^0.2.3",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.2.0",
     "typescript": "^2.6.1",
+    "typescript-eslint-parser": "^9.0.0",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   }

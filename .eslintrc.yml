@@ -1,0 +1,15 @@
+extends: [airbnb]
+parser: typescript-eslint-parser
+plugins: [
+  typescript
+]
+rules:
+  semi: [error, never]
+  comma-dangle: [error, never]
+  indent: [error, 2]
+  react/jsx-filename-extension: [error, {
+    'extensions': [
+      '.js',
+      '.tsx'
+    ]
+  }]
