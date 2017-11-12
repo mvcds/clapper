@@ -27,7 +27,8 @@
       "avoid-escape",
       "avoid-template",
       "jsx-double"
-    ]
+    ],
+    "ordered-imports": false
   },
   "rulesDirectory": []
 }
