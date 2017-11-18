@@ -6,6 +6,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devServer: {
+    contentBase: './src/app'
+  },
   devtool: 'source-map',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']

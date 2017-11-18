@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "start": "webpack-dev-server --open --hot",
     "lint:js": "eslint src/**/*.js webpack.config.js",
     "lint:ts": "tslint --project .",
     "lint": "yarn lint:ts && yarn lint:js",
